@@ -1,0 +1,11 @@
+#pip install -r requirements.txt
+
+google-generativeai>=0.7.0
+python-dotenv
+pytesseract
+pillow
+langchain
+langchain-community
+pypdf
+google-api-python-client
+google-auth

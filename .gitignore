@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.build/
+
+# Virtual env
+venv/
+.env
+.env.*
+*.env
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Credentials & tokens
+credentials.json
+token.json
+
+# PDFs/Images (optional - comment if you want to commit sample files)
+# lich_hop.pdf
+# lich_hop.png
