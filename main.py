@@ -6,14 +6,14 @@ from dotenv import load_dotenv
 import google.generativeai as genai
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
-from ocr_pdf import extract_text_from_pdf
-# from ocr_image import extract_text_from_image
+# from ocr_pdf import extract_text_from_pdf
+from ocr_image import extract_text_from_image
 
 load_dotenv()
 
 # ===== 1. OCR =====
-text = extract_text_from_pdf("lich_hop.pdf")
-# text = extract_text_from_image("lich_hop.png")
+# text = extract_text_from_pdf("lich_hop.pdf")
+text = extract_text_from_image("lich_hop.png")
 
 # ===== 2. Gemini trích xuất =====
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
